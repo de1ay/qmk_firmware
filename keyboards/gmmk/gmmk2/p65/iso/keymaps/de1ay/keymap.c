@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* Keymap _DPL: Dvorak Programmer Layer
    */
 [_DPL] = LAYOUT_65_iso_blocker(
-  KC_DLR,    KC_AMPR,  KC_LBRC,  KC_LCBR,  KC_RCBR,  KC_LPRN,  KC_EQL,   KC_ASTR,  KC_RPRN,  KC_PLUS,  KC_RBRC,  KC_EXLM,   KC_HASH,   KC_BSPC,  KC_DEL,
+  KC_DLR,    KC_PLUS,  KC_LBRC,  KC_LCBR,  KC_LPRN,  KC_AMPR,  KC_EQL,   KC_RPRN,  KC_RCBR,  KC_RBRC,  KC_ASTR,  KC_EXLM,   KC_HASH,   KC_BSPC,  KC_DEL,
   KC_TAB,    KC_SCLN,  KC_COMM,  KC_DOT,   KC_P,     KC_Y,     KC_F,     KC_G,     KC_C,     KC_R,     KC_L,     KC_SLSH,   KC_AT,               KC_PGUP,
   KC_ESC,    KC_A,     KC_O,     KC_E,     KC_U,     KC_I,     KC_D,     KC_H,     KC_T,     KC_N,     KC_S,     KC_MINS,   KC_BSLS,   KC_ENT,   KC_PGDN,
   MO(_DPSL), KC_BSPC,  KC_QUOT,  KC_Q,     KC_J,     KC_K,     KC_X,     KC_B,     KC_M,     KC_W,     KC_V,     KC_Z,      MO(_DPSL), KC_UP,    KC_RCTL,
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* Keymap _DPL: Dvorak Programmer Shift Layer
    */
 [_DPSL] = LAYOUT_65_iso_blocker(
-  KC_TILD,    KC_PERC,     KC_7,        KC_5,       KC_3,      KC_1,     KC_9,     KC_0,     KC_2,     KC_4,     KC_6,     KC_8,        KC_GRV,      _______,  _______,
+  KC_TILD,    KC_1,        KC_2,        KC_3,       KC_4,      KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_PERC,     KC_GRV,      _______,  _______,
   S(KC_TAB),  S(KC_SCLN),  S(KC_COMM),  S(KC_DOT),  S(KC_P),   S(KC_Y),  S(KC_F),  S(KC_G),  S(KC_C),  S(KC_R),  S(KC_L),  S(KC_SLSH),  KC_CIRC,               _______,
   _______,    S(KC_A),     S(KC_O),     S(KC_E),    S(KC_U),   S(KC_I),  S(KC_D),  S(KC_H),  S(KC_T),  S(KC_N),  S(KC_S),  S(KC_MINS),  S(KC_BSLS),  _______,  _______,
   _______,    _______,     S(KC_QUOT),  S(KC_Q),    S(KC_J),   S(KC_K),  S(KC_X),  S(KC_B),  S(KC_M),  S(KC_W),  S(KC_V),  S(KC_Z),     _______,     _______,  _______,
