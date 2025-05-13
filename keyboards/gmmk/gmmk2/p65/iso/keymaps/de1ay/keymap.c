@@ -22,9 +22,6 @@
 enum custom_layers {
     _QL,
     _QFL,
-    _DPL,
-    _DPSL,
-    _DPFL,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -45,32 +42,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_CAPS,   _______,  _______,  _______,  _______,  _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,  _______,  _______,  _______,   _______,  _______,
   _______,   _______,  RM_HUEU,  RM_HUED,  RM_SPDD,  RM_SPDU,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_MPRV,   KC_MPLY,  KC_MNXT,  _______,   RM_VALU,  _______,
   _______,   _______,  _______,                                QK_BOOT,                                 _______,  _______,  RM_PREV,   RM_VALD,  RM_NEXT),
-
-  /* Keymap _DPL: Dvorak Programmer Layer
-   */
-[_DPL] = LAYOUT_65_iso_blocker(
-  KC_DLR,    KC_PLUS,    KC_LBRC,  KC_LCBR,  KC_LPRN,  KC_AMPR,  KC_EQL,   KC_RPRN,  KC_RCBR,  KC_RBRC,  KC_ASTR,  KC_EXLM,   KC_HASH,   KC_BSPC,  KC_DEL,
-  KC_TAB,    KC_SCLN,    KC_COMM,  KC_DOT,   KC_P,     KC_Y,     KC_F,     KC_G,     KC_C,     KC_R,     KC_L,     KC_SLSH,   KC_AT,               KC_PGUP,
-  KC_ESC,    KC_A,       KC_O,     KC_E,     KC_U,     KC_I,     KC_D,     KC_H,     KC_T,     KC_N,     KC_S,     KC_MINS,   KC_BSLS,   KC_ENT,   KC_PGDN,
-  MO(_DPSL), MO(_DPFL),  KC_QUOT,  KC_Q,     KC_J,     KC_K,     KC_X,     KC_B,     KC_M,     KC_W,     KC_V,     KC_Z,      MO(_DPSL), KC_UP,    KC_RCTL,
-  KC_LCTL,   KC_LGUI,    KC_LALT,                                KC_SPC,                                 KC_RALT,  MO(_DPFL), KC_LEFT,   KC_DOWN,  KC_RGHT),
-
-  /* Keymap _DPL: Dvorak Programmer Shift Layer
-   */
-[_DPSL] = LAYOUT_65_iso_blocker(
-  KC_TILD,    KC_1,        KC_2,        KC_3,       KC_4,      KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_PERC,     KC_GRV,      _______,  _______,
-  S(KC_TAB),  S(KC_SCLN),  S(KC_COMM),  S(KC_DOT),  S(KC_P),   S(KC_Y),  S(KC_F),  S(KC_G),  S(KC_C),  S(KC_R),  S(KC_L),  S(KC_SLSH),  KC_CIRC,               _______,
-  _______,    S(KC_A),     S(KC_O),     S(KC_E),    S(KC_U),   S(KC_I),  S(KC_D),  S(KC_H),  S(KC_T),  S(KC_N),  S(KC_S),  S(KC_MINS),  S(KC_BSLS),  _______,  _______,
-  _______,    _______,     S(KC_QUOT),  S(KC_Q),    S(KC_J),   S(KC_K),  S(KC_X),  S(KC_B),  S(KC_M),  S(KC_W),  S(KC_V),  S(KC_Z),     _______,     _______,  _______,
-  _______,    _______,     _______,                                      _______,                                _______,  _______,     _______,     _______,  _______),
-
-  /* Keymap _DPFL: Dvorak Programmer Function Layer
-   */
-[_DPFL] = LAYOUT_65_iso_blocker(
-  PDF(_QL),  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,    _______,  KC_INS,
-  _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_PSCR,  KC_SCRL,  KC_PAUS,             _______,
-  TG(_DPSL), _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,
-  _______,   _______,  RM_HUEU,  RM_HUED,  RM_SPDD,  RM_SPDU,  KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_MPRV,  KC_MPLY,  KC_MNXT,  _______,   RM_VALU,  _______,
-  _______,   _______,  _______,                                QK_BOOT,                                _______,  _______,  RM_PREV,   RM_VALD,  RM_NEXT)
 };
 
